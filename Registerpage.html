@@ -1,12 +1,37 @@
 <html>
 <head>
-<title>Search Donors</title>
+<title>Register Page</title>
 </head>
 <body>
+<form>
+<h1><b><center>Blood Donor Signup</b></center></h1>
+<p><center>Please Fille below form to register as a doner.By Registering you agree to the <a href="terms.html">Terms and Eligibility Criteria</center></a></p>
 
 <div>
-<h1><b><center>SearchDonors</center></b></h1>
-<div>
+<p>
+<label>Mobile No</label><br>
+<input type="number" name="Mobile_number" id="Mobile_number">
+</p>
+
+<p>
+<label>Donors Full Name</label><br>
+<input type="text" name="Donors_Name" id="Donors_Name">
+</p>
+
+<p>
+<lable>Gender</label><br>
+<select>
+<option value=" ">Select</option>
+<option value="Male">Male</option>
+<option value="FeMale">FeMale</option>
+</select>
+</p>
+
+<p>
+<label>Date of Birth</label><br>
+<input type="Date" name="DOB" id="DOB">
+</p>
+
 <p>
 <lable>Select Blood Group:</lable><br>
 <select>
@@ -29,18 +54,29 @@
 <option value="A-" name="Blood_Group">A-</option>
 </select>
 </p>
-<div>
 
-<div>
+
+<p>
+<label>Email</label><br>
+<input type="email" name="Email" id="Email">
+</p>
+
+
+<p>
+<label>Address</label><br>
+<textarea cols="20" rows="4"></textarea>
+</p>
+
+
 <p>
 <lable>Select State</lable><br>
 <select>
 <option value="Tamilnadu" name="State" checked>Tamilnadu</option>
 </select>
 </p>
-</div>
 
-<div>
+
+
 <p>
 <lable>Select City</lable><br>
 <select>
@@ -63,11 +99,26 @@
 <option value="Trinalveli" name="City">Trinalveli</option>
 </select>
 </p>
-</div>
 
 <p>
-<input type="Submit" name="submit">
+<lable>Pin Code</lable><br>
+<input type="number" name="Pin_Code" id="Pin_Code">
 </p>
+
+<p>
+<fieldset>
+<legend>LoginIn formation</legend>
+<lable>Username</lable><br>
+<input type="text" name="User_Name" id="User_Name">
+</fieldset>
+</p>
+
+
+
+<p>
+<input type="Submit" id ="Register" name="register">
+</p>
+</form>
 </body>
 </html>
 
