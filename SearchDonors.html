@@ -1,104 +1,135 @@
 <html>
+
 <head>
-<title>Search Donors</title>
-<style>
-body{
-background-image:url("1.png");
-}
-h1{
-font-size:35px;
-color:black;
-text-shadow:2px 2px 2px red;
-}
-lable{
+    <title>Search Donors</title>
+    <style>
+        body {
+            background: url("./Images/3.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            overflow: hidden;
+        }
 
-font-size:20px;
-color:black;
-text-shadow:2px 2px 2px red;
-}
-select{
-background-color:yellow;
-font-size:15px;
-width:165px;
-margin:4px auto;
-}
-#submit{
-color:blue;
-padding:5px;
-margin:2px;
-font-size:15px;
-box-shadow:2px 2px 10px red;
-}
-</style>
+        h1 {
+            font-size: 45px;
+            color: red;
+            text-shadow: 2px 2px 2px yellow;
+        }
+
+        lable {
+            font-style: bold;
+            font-size: 35px;
+            color: red;
+            text-shadow: 2px 2px 2px yellow;
+        }
+
+        select {
+            font-size: 15px;
+            width: 165px;
+            margin: 4px auto;
+        }
+
+        #submit {
+            color: blue;
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 20px;
+            font-size: 15px;
+            box-shadow: 2px 2px 10px red;
+        }
+
+        #Blood_group {
+            border-color: green;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        #city {
+            border-color: green;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        #state {
+            border-color: green;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
-<form>
-<div>
-<h1><b><center>SearchDonors</center></b></h1>
-<div>
-<p>
-<lable>Select Blood Group:</lable><br>
-<select>
-<option value=" " name="Blood_Group">Select Blood Group</option>
-<option value="A1+" name="Blood_Group">A1+</option>
-<option value="A1-" name="Blood_Group">A1-</option>
-<option value="A2+" name="Blood_Group">A2+</option>
-<option value="A2+" name="Blood_Group">A2+</option>
-<option value="A2+" name="Blood_Group">A2+</option>
-<option value="B-" name="Blood_Group">B-</option>
-<option value="A1B+" name="Blood_Group">A1B+</option>
-<option value="A1B-" name="Blood_Group">A1B-</option>
-<option value="A2B+" name="Blood_Group">A2B+</option>
-<option value="A2B-" name="Blood_Group">A2B-</option>
-<option value="AB+" name="Blood_Group">AB+</option>
-<option value="AB-" name="Blood_Group">AB-</option>
-<option value="O+" name="Blood_Group">O+</option>
-<option value="O-" name="Blood_Group">O-</option>
-<option value="A+" name="Blood_Group">A+</option>
-<option value="A-" name="Blood_Group">A-</option>
-</select>
-</p>
-<div>
+    <form style="align-content: center;">
+        <div>
+            <h1><b>
+                    <center>SearchDonors
+                </b></h1>
+            <div>
+                <p>
+                    <lable>Select Blood Group:</lable><br>
+                    <select id="blood_group">
+                        <option value=" " name="Blood_Group">Select Blood Group</option>
+                        <option value="A1+" name="Blood_Group">A1+</option>
+                        <option value="A1-" name="Blood_Group">A1-</option>
+                        <option value="A2+" name="Blood_Group">A2+</option>
+                        <option value="A2+" name="Blood_Group">A2+</option>
+                        <option value="A2+" name="Blood_Group">A2+</option>
+                        <option value="B-" name="Blood_Group">B-</option>
+                        <option value="A1B+" name="Blood_Group">A1B+</option>
+                        <option value="A1B-" name="Blood_Group">A1B-</option>
+                        <option value="A2B+" name="Blood_Group">A2B+</option>
+                        <option value="A2B-" name="Blood_Group">A2B-</option>
+                        <option value="AB+" name="Blood_Group">AB+</option>
+                        <option value="AB-" name="Blood_Group">AB-</option>
+                        <option value="O+" name="Blood_Group">O+</option>
+                        <option value="O-" name="Blood_Group">O-</option>
+                        <option value="A+" name="Blood_Group">A+</option>
+                        <option value="A-" name="Blood_Group">A-</option>
+                    </select>
+                </p>
+                <div>
 
-<div>
-<p>
-<lable>Select State</lable><br>
-<select>
-<option value="Tamilnadu" name="State" checked>Tamilnadu</option>
-</select>
-</p>
-</div>
+                    <div>
+                        <p>
+                            <lable>Select State</lable><br>
+                            <select id="state">
+                                <option value="Tamilnadu" name="State" checked>Tamilnadu</option>
+                            </select>
+                        </p>
+                    </div>
 
-<div>
-<p>
-<lable>Select City</lable><br>
-<select>
-<option value=" " name="City">Select District</option>
-<option value="Madurai" name="City">Madurai</option>
-<option value="Chennai" name="City">Chennai</option>
-<option value="Coimbatore" name="City">Coimbatore</option>
-<option value="Hosur" name="City">Hosur</option>
-<option value="Salem" name="City">Salem</option>
-<option value="Trichy" name="City">Trichy</option>
-<option value="Viruthunagar" name="City">Viruthunagar</option>
-<option value="Sivagangai" name="City">Sivagangai</option>
-<option value="Krishnagiri" name="City">Krishnagiri</option>
-<option value="Bengaluru" name="City">Bengaluru</option>
-<option value="Namakal" name="City">Namakal</option>
-<option value="Karur" name="City">Karur</option>
-<option value="Palani" name="City">Palani</option>
-<option value="Dindugal" name="City">Dindugal</option>
-<option value="Puthukottai" name="City">Puthukottai</option>
-<option value="Trinalveli" name="City">Trinalveli</option>
-</select>
-</p>
-</div>
+                    <div>
+                        <p>
+                            <lable>Select City</lable><br>
+                            <select id="city">
+                                <option value=" " name="City">Select District</option>
+                                <option value="Madurai" name="City">Madurai</option>
+                                <option value="Chennai" name="City">Chennai</option>
+                                <option value="Coimbatore" name="City">Coimbatore</option>
+                                <option value="Hosur" name="City">Hosur</option>
+                                <option value="Salem" name="City">Salem</option>
+                                <option value="Trichy" name="City">Trichy</option>
+                                <option value="Viruthunagar" name="City">Viruthunagar</option>
+                                <option value="Sivagangai" name="City">Sivagangai</option>
+                                <option value="Krishnagiri" name="City">Krishnagiri</option>
+                                <option value="Bengaluru" name="City">Bengaluru</option>
+                                <option value="Namakal" name="City">Namakal</option>
+                                <option value="Karur" name="City">Karur</option>
+                                <option value="Palani" name="City">Palani</option>
+                                <option value="Dindugal" name="City">Dindugal</option>
+                                <option value="Puthukottai" name="City">Puthukottai</option>
+                                <option value="Trinalveli" name="City">Trinalveli</option>
+                            </select>
+                        </p>
+                    </div>
 
-<p>
-<input type="Submit" name="submit" id="submit">
-</p>
-</form>
+                    <p>
+                        <input type="Submit" name="submit" id="submit">
+                    </p>
+                </center>
+    </form>
 </body>
+
 </html>
-
-

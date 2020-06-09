@@ -1,26 +1,122 @@
 <html>
 <head>
 <title>Register Page</title>
+<style>
+body{
+background: url("./Images/6.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+h1{
+font-size:45px;
+color:red;
+text-shadow:2px 2px 2px yellow;
+}
+a{
+text-decoration:none;
+text-transform:capitalize;
+}
+a:link{
+color:yellow;
+}
+a:visited{
+color:green;
+}
+a:hover{
+color:black;
+}
+a:active{
+color:white;
+}
+a:focus{
+color:red;
+}
+#Mobile_number{
+border-color:black;
+border-radius:10px;
+font-weight:bold;
+}
+#Donors_Name{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#DOB{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#Email{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#Pin_Code{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#blood_group{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#state{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#city{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#gender{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#address{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#User_Name{
+border-color:green;
+border-radius:10px;
+font-weight:bold;
+}
+#register{
+border-color:black;
+padding:15px;
+border-radius:30px;
+font-weight:bold;
+color:black;
+background-color:yellow;
+}
+</style>
 </head>
 <body>
 <form>
 <h1><b><center>Blood Donor Signup</b></center></h1>
-<p><center>Please Fille below form to register as a doner.By Registering you agree to the <a href="terms.html">Terms and Eligibility Criteria</center></a></p>
+<p><center><b>Please Fille below form to register as a doner.By Registering you agree to the</b> <a href="terms.html">Terms and Eligibility Criteria</center></a></p>
 
 <div>
 <p>
-<label>Mobile No</label><br>
+<label><b>Mobile No</b></label><br>
 <input type="number" name="Mobile_number" id="Mobile_number">
 </p>
 
 <p>
-<label>Donors Full Name</label><br>
+<label><b>Donors Full Name</b></label><br>
 <input type="text" name="Donors_Name" id="Donors_Name">
 </p>
 
 <p>
-<lable>Gender</label><br>
-<select>
+<lable><b>Gender</b></label><br>
+<select id="gender">
 <option value=" ">Select</option>
 <option value="Male">Male</option>
 <option value="FeMale">FeMale</option>
@@ -28,13 +124,13 @@
 </p>
 
 <p>
-<label>Date of Birth</label><br>
+<label><b>Date of Birth</b></label><br>
 <input type="Date" name="DOB" id="DOB">
 </p>
 
 <p>
-<lable>Select Blood Group:</lable><br>
-<select>
+<lable><b>Select Blood Group:</b></lable><br>
+<select id="blood_group">
 <option value=" " name="Blood_Group">Select Blood Group</option>
 <option value="A1+" name="Blood_Group">A1+</option>
 <option value="A1-" name="Blood_Group">A1-</option>
@@ -57,20 +153,20 @@
 
 
 <p>
-<label>Email</label><br>
+<label><b>Email</b></label><br>
 <input type="email" name="Email" id="Email">
 </p>
 
 
 <p>
-<label>Address</label><br>
-<textarea cols="20" rows="4"></textarea>
+<label><b>Address</b></label><br>
+<textarea cols="20" rows="4" id="address"></textarea>
 </p>
 
 
 <p>
-<lable>Select State</lable><br>
-<select>
+<lable><b>Select State</b></lable><br>
+<select id="state">
 <option value="Tamilnadu" name="State" checked>Tamilnadu</option>
 </select>
 </p>
@@ -78,8 +174,8 @@
 
 
 <p>
-<lable>Select City</lable><br>
-<select>
+<lable><b>Select City</b></lable><br>
+<select id="city">
 <option value=" " name="City">Select District</option>
 <option value="Madurai" name="City">Madurai</option>
 <option value="Chennai" name="City">Chennai</option>
@@ -101,22 +197,23 @@
 </p>
 
 <p>
-<lable>Pin Code</lable><br>
+<lable><b>Pin Code</b></lable><br>
 <input type="number" name="Pin_Code" id="Pin_Code">
 </p>
 
 <p>
 <fieldset>
-<legend>LoginIn formation</legend>
-<lable>Username</lable><br>
+<legend><b>LoginIn formation</b></legend>
+<lable><b>Username</b></lable><br>
 <input type="text" name="User_Name" id="User_Name">
 </fieldset>
 </p>
 
 
 
-<p>
+<p><center>
 <input type="Submit" id ="Register" name="register">
+</center>
 </p>
 </form>
 </body>
